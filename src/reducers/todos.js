@@ -5,7 +5,6 @@ import {
 } from '../actions/todos'
 import { RECEIVE_DATA } from "../actions/shared";
 
-
 export default function todos (state = [], action) {
   switch(action.type) {
     case ADD_TODO :
