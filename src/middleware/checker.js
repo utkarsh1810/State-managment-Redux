@@ -13,7 +13,7 @@ const checker = (store) => (next) => (action) => {
     action.type === ADD_GOAL &&
     action.goal.name.toLowerCase().includes('bitcoin')
   ) {
-    return alert("Nope. That's a bad idea.")
+    return alert("Nope. That's a bad idea. Should try anything else.")
   }
 
   return next(action)
